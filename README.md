@@ -1,16 +1,35 @@
-# pet_healthy_kel1
+# Pet_Healthy_Kel_1
 
-A new Flutter project.
+Pet Healthy.
 
-## Getting Started
+Tata cara ngeclone project ini untuk para anggota saya :
 
-This project is a starting point for a Flutter application.
+- git clone https://github.com/Agrama26/Projek-Kel-1.git
 
-A few resources to get you started if this is your first Flutter project:
+Tata cara mengpush dan komen untuk project ini :
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- git add .
+- git commit -m "komentar jangan lupa apa yg diubah"
+- git push
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tata cara membuat branch
+
+- git branch <nama branch kalian>
+
+pindah branch
+
+- git checkout <nama branch kalia>
+
+melihat branch yang ada
+
+- git branch
+
+melihat branch yang ada direpository
+
+- git branch -r
+
+cara mengepush menggunakan branch
+
+- git add .
+- git commit -m "komentar kawanku sekalian disini"
+- git push origin <nama branch kalian> / git push <nama branch kalian>
