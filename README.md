@@ -4,7 +4,7 @@
 
 Ketua : - Agung Ramadhan Setiawan
 
-Anggota : - Tulis Sendiri ya kawan kawan nama kalian
+Anggota : - Teuku Aldie Aulia
 
 Pet Healthy.
 
