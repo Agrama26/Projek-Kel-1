@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,22 +27,24 @@ class ConsultationScreen extends StatelessWidget {
     'Dr. Emily Johnson',
     'Dr. Michael Brown',
     'Dr. Sarah Davis',
-    'Afiifa', 
-    'Sarah', 
+    'Afiifa',
+    'Sarah',
     'Agung',
     'dudung',
-    'bani', 
-    'jara', 
+    'bani',
+    'jara',
     'Roji'
   ];
+
+  ConsultationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Konsultasi'),
+        title: const Text('Konsultasi'),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [Colors.blue, Colors.purple],
               begin: Alignment.topLeft,
@@ -64,22 +68,25 @@ class ConsultationScreen extends StatelessWidget {
             itemBuilder: (context, index) {
               return Card(
                 elevation: 5,
-                margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                margin:
+                    const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: ListTile(
-                  contentPadding: EdgeInsets.all(15),
+                  contentPadding: const EdgeInsets.all(15),
                   leading: CircleAvatar(
                     backgroundColor: Colors.blue.shade100,
                     child: Text(
                       consultants[index][0],
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+                      style: const TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ),
                   title: Text(
                     consultants[index],
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                    style: const TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.w600),
                   ),
                   trailing: ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -92,11 +99,12 @@ class ConsultationScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ChatScreen(consultantName: consultants[index]),
+                          builder: (context) =>
+                              ChatScreen(consultantName: consultants[index]),
                         ),
                       );
                     },
-                    child: Text('Konsultasi'),
+                    child: const Text('Konsultasi'),
                   ),
                 ),
               );
@@ -111,9 +119,10 @@ class ConsultationScreen extends StatelessWidget {
 class ChatScreen extends StatefulWidget {
   final String consultantName;
 
-  ChatScreen({required this.consultantName});
+  const ChatScreen({super.key, required this.consultantName});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ChatScreenState createState() => _ChatScreenState();
 }
 
@@ -137,7 +146,7 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: AppBar(
         title: Text('Chat with ${widget.consultantName}'),
         flexibleSpace: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [Colors.blue, Colors.purple],
               begin: Alignment.topLeft,
@@ -153,21 +162,26 @@ class _ChatScreenState extends State<ChatScreen> {
               itemCount: messages.length,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 8.0, horizontal: 16.0),
                   child: Align(
-                    alignment: messages[index].startsWith('You:') 
-                        ? Alignment.centerRight 
+                    alignment: messages[index].startsWith('You:')
+                        ? Alignment.centerRight
                         : Alignment.centerLeft,
                     child: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: messages[index].startsWith('You:') ? Colors.blue : Colors.grey[300],
+                        color: messages[index].startsWith('You:')
+                            ? Colors.blue
+                            : Colors.grey[300],
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Text(
                         messages[index],
                         style: TextStyle(
-                          color: messages[index].startsWith('You:') ? Colors.white : Colors.black,
+                          color: messages[index].startsWith('You:')
+                              ? Colors.white
+                              : Colors.black,
                         ),
                       ),
                     ),
@@ -193,7 +207,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
                 IconButton(
                   onPressed: _sendMessage,
-                  icon: Icon(Icons.send, color: Colors.blue),
+                  icon: const Icon(Icons.send, color: Colors.blue),
                 ),
               ],
             ),
