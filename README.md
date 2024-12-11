@@ -33,7 +33,28 @@ Halaman SurgeryPage
 - Di bagian bawah halaman, terdapat tombol untuk melakukan pemesanan janji temu.
 - Saat tombol ditekan, ditampilkan SnackBar yang memberi tahu bahwa fitur pemesanan akan segera hadir.
 
-- Cut Siti Sarah Azkiani 
+- Cut Siti Sarah Azkiani
+- Halaman ProfilePage
+Halaman profil pada aplikasi HealthyPet berfungsi sebagai pusat kendali utama bagi pengguna untuk mengelola informasi pribadi dan data hewan peliharaan mereka. Halaman ini menampilkan informasi pengguna seperti nama, email, dan foto profil, yang dapat diedit sesuai kebutuhan. Selain itu, pengguna dapat mengakses menu Hewan Peliharaan Saya untuk melihat, menambahkan, atau mengubah data hewan peliharaan, termasuk nama, usia, ras, jenis, dan foto. Menu Riwayat Kesehatan memungkinkan pengguna melacak jadwal vaksinasi, pemeriksaan kesehatan, dan riwayat pengobatan hewan peliharaan secara terorganisir. Fitur ini membantu pengguna menjaga kesehatan hewan peliharaan dengan lebih baik.
+
+![image](https://github.com/user-attachments/assets/52af8221-7b3b-4512-a67b-ed13b42c98ee)
+
+Selain itu, menu Pengaturan Akun memungkinkan pengelolaan informasi akun seperti nama pengguna, email, kata sandi, serta pengaturan notifikasi. Tombol Keluar juga tersedia untuk memastikan keamanan akun dengan memungkinkan pengguna logout dengan mudah. Halaman profil ini dirancang sederhana dan intuitif untuk memberikan pengalaman pengguna yang efisien dan mendukung pengelolaan kesehatan hewan peliharaan secara menyeluruh.
+
+![image](https://github.com/user-attachments/assets/b22ee8d9-7856-4ee5-8717-bf6759821e4f)
+
+Fitur Edit Profil berfungsi untuk memungkinkan pengguna memperbarui informasi pribadi anda secara mudah dan cepat. Pada dialog atau pop-up Edit Profil ini, pengguna dapat melakukan beberapa tindakan berikut :
+1. Edit Nama Pengguna
+   Input teks pertama, mengganti nama pengguna.Perubahan ini akan langsung diperbarui dan ditampilkan di halaman profil setelah disimpan.
+2. Edit Alamat Email
+   Input teks kedua, untuk pengguna memperbarui alamat email yang terhubung dengan akun mereka. Hal ini berguna jika pengguna ingin mengganti alamat email utama untuk komunikasi atau login.
+3. Tombol simpan
+   Setelah pengguna selesai memperbarui informasi, anda dapat menekan tombol Simpan untuk menyimpan perubahan yang telah dilakukan. Data baru akan diperbarui ke server atau basis data aplikasi.
+4. Tombol Batal
+   Tombol Batal memberikan opsi bagi pengguna untuk membatalkan perubahan dan menutup dialog tanpa menyimpan informasi yang diubah.
+   
+Manfaat fitur profil
+Fitur ini dirancang untuk meningkatkan fleksibilitas dan kenyamanan pengguna dalam mengelola informasi pribadi mereka. Dengan antarmuka yang sederhana, fitur Edit Profil memastikan pengguna dapat memperbarui data kapan saja tanpa memerlukan bantuan tambahan. Ini juga membantu menjaga keakuratan data pengguna yang tersimpan di aplikasi.
 
 Pet Healthy.
 
