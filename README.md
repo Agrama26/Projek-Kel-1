@@ -4,7 +4,8 @@
 
 Ketua : - Agung Ramadhan Setiawan
 
-Anggota : - Teuku Aldie Aulia
+Anggota : 
+- Teuku Aldie Aulia
 - Afiifa Lhokseum Dwi Putri
 
 Pet Healthy.
