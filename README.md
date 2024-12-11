@@ -20,6 +20,18 @@ Tombol ini menggunakan fitur navigasi Flutter ( Navigator.push) untuk berpindah 
 - Anda dapat melakukan konsultasi mengenai hewan anda kepada sang-dokter
 - kemudian anda dapat mengirimkan teks pesan anda dengan menekan tombol kirim yang berwarna biru disamping kanan bawah  
 
+- Fachrul Rozi Rangkuti
+Halaman SurgeryPage
+
+![image](assets/images/surgery_services.png)
+- Halaman SurgeryPage ini berfungsi untuk menampilkan daftar dokter yang menyediakan layanan Surgery (operasi hewan). Halaman ini dirancang untuk memberikan tampilan bersih dan informatif dengan fokus pada daftar dokter layanan Surgery serta memungkinkan pengguna untuk melihat detail lebih lanjut tentang dokter tersebut.
+- Data dokter diambil dari variabel doctors yang sudah difilter hanya dokter yang menyediakan layanan Surgery.
+- Jika tidak ada dokter yang menyediakan layanan Surgery, ditampilkan pesan "No doctors found for Surgery service."
+
+![image](assets/images/detail_doctor.png)
+- Halaman DetailDoctorPage berfungsi untuk menampilkan detail lengkap dari seorang dokter yang dipilih oleh pengguna. Halaman ini menerima parameter DoctorModel doctor yang berisi data dokter seperti nama, gambar, jarak, dan layanan yang ditawarkan.
+- Di bagian bawah halaman, terdapat tombol untuk melakukan pemesanan janji temu.
+- Saat tombol ditekan, ditampilkan SnackBar yang memberi tahu bahwa fitur pemesanan akan segera hadir.
 
 - Cut Siti Sarah Azkiani 
 
