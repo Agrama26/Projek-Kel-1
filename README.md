@@ -6,16 +6,24 @@ Ketua : - Agung Ramadhan Setiawan
 
 Anggota : 
 - Teuku Aldie Aulia
-Halaman Spa & Treatment
+- Halaman Spa & Treatment
 Fungsi dari bagian **Rekomendasi SPA & Treatment** pada halaman ini adalah untuk memberikan informasi kepada pengguna mengenai tempat layanan perawatan dan relaksasi untuk hewan peliharaan yang direkomendasikan. 
 Melalui informasi seperti nama tempat, lokasi, rating, dan ulasan pengguna lain, fitur ini membantu pengguna memilih layanan terbaik berdasarkan kebutuhan dan preferensi mereka. Dengan adanya ikon lokasi, pengguna juga dapat dengan mudah menemukan tempat tersebut menggunakan navigasi. Tujuannya adalah untuk mempermudah pemilik hewan peliharaan dalam menemukan layanan SPA & Treatment yang terpercaya dan berkualitas.
 
 ![image](assets/images/halaman_spa.png)
 
-- Penempatan rekomendasi di bawah kategori "SPA & Treatment" menekankan layanan khusus perawatan dan relaksasi untuk hewan peliharaan.
-- Informasi ini membantu pengguna membuat keputusan lebih baik dengan membandingkan kualitas layanan yang ditawarkan.
-- Penyajian yang ringkas dan informatif mempermudah pengguna untuk langsung memahami informasi penting tanpa kebingungan.
+1. Penempatan rekomendasi di bawah kategori "SPA & Treatment" menekankan layanan khusus perawatan dan relaksasi untuk hewan peliharaan.
+2. Informasi ini membantu pengguna membuat keputusan lebih baik dengan membandingkan kualitas layanan yang ditawarkan.
+3. Penyajian yang ringkas dan informatif mempermudah pengguna untuk langsung memahami informasi penting tanpa kebingungan.
 
+- Halaman Utama Spa & treatment
+Halaman ini memudahkan pengguna memesan layanan SPA & Treatment untuk hewan peliharaan. Pengguna dapat memilih tanggal, waktu, dan jenis layanan seperti potong rambut, mandi, atau perawatan kuku, lengkap dengan harga. Tersedia kolom catatan untuk instruksi tambahan, dan pesanan dapat dikonfirmasi dengan tombol "Konfirmasi." Harga juga dapat dinegosiasikan di tempat.
+
+![image](assets/images/halaman_spa&treatment_booking.png)
+
+1. Menampilkan informasi hewan peliharaan untuk memastikan layanan dipesan sesuai dengan hewan yang dimaksud.
+2. Pengguna dapat memilih tanggal dan waktu layanan dari jadwal yang tersedia.
+3. Menyediakan daftar layanan seperti potong rambut, mandi, dan perawatan kuku, disertai harga setiap layanan.
 
 - Afiifa Lhokseum Dwi Putri
 Halaman Consultation
