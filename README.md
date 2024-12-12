@@ -6,7 +6,7 @@ Ketua : - Agung Ramadhan Setiawan
 
 Anggota : 
 - Teuku Aldie Aulia
-  Halaman Spa & Treatment
+Halaman Spa & Treatment
 Fungsi dari bagian **Rekomendasi SPA & Treatment** pada halaman ini adalah untuk memberikan informasi kepada pengguna mengenai tempat layanan perawatan dan relaksasi untuk hewan peliharaan yang direkomendasikan. 
 Melalui informasi seperti nama tempat, lokasi, rating, dan ulasan pengguna lain, fitur ini membantu pengguna memilih layanan terbaik berdasarkan kebutuhan dan preferensi mereka. Dengan adanya ikon lokasi, pengguna juga dapat dengan mudah menemukan tempat tersebut menggunakan navigasi. Tujuannya adalah untuk mempermudah pemilik hewan peliharaan dalam menemukan layanan SPA & Treatment yang terpercaya dan berkualitas.
 
