@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_healthy_kel1/models/doctor_model.dart';
 import 'package:pet_healthy_kel1/models/service_model.dart';
+import 'package:pet_healthy_kel1/screens/consultation_page.dart'; // Import halaman ConsultationPage
 
 var selectedService = 0;
 var menus = [
@@ -24,7 +25,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       extendBody: true,
-      bottomNavigationBar: _bottomNavigationBar(),
+      bottomNavigationBar: _bottomNavigationBar(context),
       body: SafeArea(
           child: SingleChildScrollView(
         child: Column(
@@ -44,7 +45,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            _services(),
+            _services(context), // Pass context to services
             const SizedBox(
               height: 27,
             ),
@@ -55,7 +56,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  BottomNavigationBar _bottomNavigationBar() => BottomNavigationBar(
+  BottomNavigationBar _bottomNavigationBar(BuildContext context) =>
+      BottomNavigationBar(
         selectedItemColor: const Color(0xFF818AF9),
         type: BottomNavigationBarType.fixed,
         items: menus
@@ -171,34 +173,45 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  SizedBox _services() {
+  SizedBox _services(BuildContext context) {
     return SizedBox(
       height: 36,
       child: ListView.separated(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) => Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
-                decoration: BoxDecoration(
-                    color: selectedService == index
-                        ? const Color(0xFF818AF9)
-                        : const Color(0xFFF6F6F6),
-                    border: selectedService == index
-                        ? Border.all(
-                            color: const Color(0xFFF1E5E5).withOpacity(.22),
-                            width: 2)
-                        : null,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Center(
-                    child: Text(
-                  Service.all()[index],
-                  style: GoogleFonts.manrope(
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
+          itemBuilder: (context, index) => GestureDetector(
+                onTap: () {
+                  if (index == 3) {
+                    // Check if the Consultation service is tapped
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ConsultationPage()));
+                  }
+                },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  decoration: BoxDecoration(
                       color: selectedService == index
-                          ? Colors.white
-                          : const Color(0xFF3F3E3F).withOpacity(.3)),
-                )),
+                          ? const Color(0xFF818AF9)
+                          : const Color(0xFFF6F6F6),
+                      border: selectedService == index
+                          ? Border.all(
+                              color: const Color(0xFFF1E5E5).withOpacity(.22),
+                              width: 2)
+                          : null,
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Center(
+                      child: Text(
+                    Service.all()[index],
+                    style: GoogleFonts.manrope(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: selectedService == index
+                            ? Colors.white
+                            : const Color(0xFF3F3E3F).withOpacity(.3)),
+                  )),
+                ),
               ),
           separatorBuilder: (context, index) => const SizedBox(
                 width: 10,

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ConsultationPage());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ConsultationPage extends StatelessWidget {
+  const ConsultationPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,16 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Roboto',
       ),
-      home: ConsultationScreen(),
+      home: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.blue, Colors.purple],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: ConsultationScreen(),
+      ),
     );
   }
 }
@@ -30,13 +39,13 @@ class ConsultationScreen extends StatelessWidget {
     'Afiifa',
     'Sarah',
     'Agung',
-    'dudung',
-    'bani',
-    'jara',
+    'Dudung',
+    'Bani',
+    'Jara',
     'Roji'
   ];
 
-  ConsultationScreen({super.key});
+  ConsultationScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -119,7 +128,7 @@ class ConsultationScreen extends StatelessWidget {
 class ChatScreen extends StatefulWidget {
   final String consultantName;
 
-  const ChatScreen({super.key, required this.consultantName});
+  const ChatScreen({Key? key, required this.consultantName}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
@@ -131,9 +140,9 @@ class _ChatScreenState extends State<ChatScreen> {
   List<String> messages = [];
 
   void _sendMessage() {
-    if (_controller.text.isNotEmpty) {
+    if (_controller.text.trim().isNotEmpty) {
       setState(() {
-        messages.add('You: ${_controller.text}');
+        messages.add('You: ${_controller.text.trim()}');
         messages.add('${widget.consultantName}: Your message here');
         _controller.clear();
       });
