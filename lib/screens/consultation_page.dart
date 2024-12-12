@@ -25,6 +25,7 @@ class ConsultationPage extends StatelessWidget {
         ),
         child: ConsultationScreen(),
       ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
