@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo', // Judul aplikasi.
+
+      title: 'Petshopr', // Judul aplikasi.
+
       theme: ThemeData(
         // Mengatur tema aplikasi menggunakan Material 3 dan skema warna berdasarkan warna dasar.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
