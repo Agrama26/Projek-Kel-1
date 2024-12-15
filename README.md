@@ -28,8 +28,8 @@ Anggota :
 - Halaman Utama Spa & treatment
   Halaman ini memudahkan pengguna memesan layanan SPA & Treatment untuk hewan peliharaan. Pengguna dapat memilih tanggal, waktu, dan jenis layanan seperti potong rambut, mandi, atau perawatan kuku, lengkap dengan harga. Tersedia kolom catatan untuk instruksi tambahan, dan pesanan dapat dikonfirmasi dengan tombol "Konfirmasi." Harga juga dapat dinegosiasikan di tempat.
 
-![image](assets/images/spa_1.png)
-![image](assets/images/spa_2.png)
+![image](assets/images/spa_1.jpeg)
+![image](assets/images/spa_2.jpeg)
 
 1. Menampilkan informasi hewan peliharaan untuk memastikan layanan dipesan sesuai dengan hewan yang dimaksud.
 2. Pengguna dapat memilih tanggal dan waktu layanan dari jadwal yang tersedia.
